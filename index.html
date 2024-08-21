@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <h1>Student Registration</h1>
+    <hr />
+    <p>Please fill out the form below to register as a student</p>
+
+    <form action="index.html" method="get">
+      <fieldset>
+        <legend>Fill the Form :</legend>
+        <br />
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" name="fullname" id="name" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="mobilenum">Phone Number</label>
+          <input type="tel" name="phonenumber" id="mobilenum" required />
+        </div>
+        <br />
+
+        <div>
+          <label>Gender :</label>
+
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label>
+
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+
+          <input type="radio" name="gender" id="others" value="others" />
+          <label for="others">Others</label>
+        </div>
+        <br />
+        <div>
+          <label>Courses Interested :</label>
+          <input type="checkbox" name="course" id="html" value="html" />
+          <label for="html">HTML</label>
+          <input type="checkbox" name="course" id="css" value="css" />
+          <label for="css">CSS</label>
+          <input
+            type="checkbox"
+            name="course"
+            id="javascript"
+            value="javascript"
+          />
+          <label for="javascript">JAVASCRIPT</label>
+          <input type="checkbox" name="course" id="python" value="python" />
+          <label for="python">PYTHON</label>
+        </div>
+        <br />
+        <div>
+          <label for="comments">Comments :</label><br />
+          <textarea name="comments" id="comments">share your Feedback</textarea>
+        </div>
+        <br />
+        <button type="submit">Register</button>
+      </fieldset>
+    </form>
+    <br />
+
+    <h1>Registered Students'Details :</h1>
+    <table border="7" cellpadding="13">
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Date of Birth</th>
+          <th>Phone Number</th>
+          <th>Gender</th>
+          <th>Courses Interested</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>110819104021</td>
+          <td>Enoch Raj</td>
+          <td>enoch21@gmail.com</td>
+          <td>21-04-2000</td>
+          <td>9876512340</td>
+          <td>Male</td>
+          <td>HTML,CSS</td>
+        </tr>
+        <tr>
+          <td>110819104022</td>
+          <td>Prabhakaran</td>
+          <td>prabha22@gmail.com</td>
+          <td>22-05-2001</td>
+          <td>8765123419</td>
+          <td>Male</td>
+          <td>JAVASCRIPT</td>
+        </tr>
+        <tr>
+          <td>110819104023</td>
+          <td>Kamal</td>
+          <td>kamal23@gmail.com</td>
+          <td>23-06-2002</td>
+          <td>7651234019</td>
+          <td>Male</td>
+          <td>PYTHON</td>
+        </tr>
+        <tr>
+          <td>110819104024</td>
+          <td>Emie</td>
+          <td>emie24@gmail.com</td>
+          <td>24-07-2003</td>
+          <td>6512340987</td>
+          <td>Female</td>
+          <td>HTML,CSS,JAVASCRIPT,PYTHON</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
